@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* Слагижвание шрифта */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    color: black;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: normal;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container{
+    max-width: 1210px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+/* Header */
+.header{
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__img-wrap {
+    border: 2px solid black;
+    height: 60px;
+    width:  60px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo__img {
+    width: 70%;
+    height: 80%;
+    object-fit: contain;
+}
+.logo__desc {
+    line-height: 131.19%;
+}
+.logo__title {
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.logo__subtitle {
+    font-weight: 300;
+    font-size: 14px;
+}
+.nav {
+    margin: 0px 30px;
+}
+.nav__list {
+    display: flex;
+    
+}
+.nav__item {
+    margin-right: 54px; 
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+.nav__item:hover{
+    border-color: black;
+}
+.nav__item:last-child{
+    margin-right: 0px;
+}
+.nav__item:hover .nav__link {
+    text-shadow: 0px 0px 1px black;
+}
+.tel {
+}
+.cart {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: 4px 4px 6px black;
+    border-radius: 50px;
+    overflow: hidden;
+    padding-right: 15px;
+}
+.cart__img-wrap {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #FFBF42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart__img-wrap:hover{
+    background: #e09d15;
+    transition: all 0.3s;
+
+}
+.cart__img-wrap:active{
+    transform: translate(0px 1px);
+}
+
+.cart__img {
+    width: 58%;
+    height: 58%;
+    object-fit: contain;
+}
+.cart__price {
+    margin: 0px 18px 0px 13px;
+    font-weight: 700;
+    font-size: 0px;
+}
+.cart__value{
+    font-size: 14px;
+    line-height: 16px;
+
+}
+.cart__value {
+}
+.cart__btn {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+
+
+}
+.cart__btn-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* header end */
+/* hero */
+.hero {
+    height: 573px;
+    display: flex;
+}
+.hero__desc, .hero__slider{
+    height: 100%;
+    position: relative;
+}
+.hero__desc{
+    flex: 0 0 100%;
+}
+.hero__desc::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:white;
+    box-shadow:4px 4px 15px dimgray;
+    border-radius: 0px 500px 500px 0px;
+    top: 0;
+    right: 50%;
+    z-index: -10;
+}
+
+.container {
+}
+.hero__content {
+}
+.title {
+}
+.subtitle {
+}
+.hero__subtitle {
+}
+.btn {
+}
+.hero__link {
+}
+.hero__slider {
+    flex: 0 0 50%;
+    transform: translate(-100%, 0%);
+    overflow: hidden;
+    box-shadow: -4px 4px 15px white;
+    border-radius: 500px 0px 0px 500px;
+}
+.dots {
+    display: flex;
+    position: absolute;
+    margin-left: 46%;
+    bottom: 38px;
+
+}
+.dot {
+    margin-right: 14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.dot:last-child{
+    margin-right: 0px;
+}
+.dot:hover{
+    background: #FFBF42;
+}
+.active {
+}
+.hero__slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
